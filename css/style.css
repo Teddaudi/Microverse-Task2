@@ -19,6 +19,7 @@ header {
     align-items: center;
     background-color: #eee;
     width: 100%;
+    z-index: 1;
 
 }
 .logo > img {
@@ -128,12 +129,19 @@ iframe{
     gap: 1.5rem;
     
 }
+
 .pricing .container{
+    display: flex;
+    margin-inline: auto;
+    gap: 1.5rem;
+}
+
+.pricing .tabs{
     border: .5px solid black;
     text-align: center;
 
 }
-.pricing h3{
+.tabs h3{
     background-color: #dddddd;
     padding: .5rem 1.5rem;
 }
@@ -148,10 +156,35 @@ iframe{
 .pricing-bottom .text{
     padding-top: 10px;
 }
+
 .pricing-bottom button{
     text-align: center;
     background-color: #f1c40f;
     border: none;
     padding: .4rem .8rem;
     margin-top: 1.5rem;
+    cursor: pointer;
+}
+
+footer{
+    background-color: #DDDDDD;
+    width: 50%;
+    margin-inline: auto;
+    padding: 1rem;
+}
+
+footer .container{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .container .lists{
+    display: flex;
+    justify-content: end;
+}
+
+.copyright{
+    text-align: end;
+    font-weight: lighter;
+    font-size: .8rem;   
 }
